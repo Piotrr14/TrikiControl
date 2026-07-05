@@ -1,4 +1,5 @@
-# Triki Control
+# [ENG] Triki Control
+<img src="img/Triki00.jpg" width="400">
 
 A lightweight Windows tray application that turns the **Triki BLE controller** (created by **Żabka** and **HopX**) into a customizable desktop remote.
 
@@ -45,17 +46,19 @@ The application connects to a Triki device via Bluetooth Low Energy (BLE), inter
 * NAudio
 
 ## About Triki
+<img src="img/Triki01.jpg" width="400">
 
 Triki is a Bluetooth LE motion controller developed by Żabka and HopX. Originally designed for interaction with mobile applications, this project extends its functionality and allows it to be used as a practical desktop controller for Windows.
 
 ## License
 
 MIT License
+<br><br><br><br><br><br><br>
 
 
 
-
-# Triki Control
+# [PL] Triki Control
+<img src="img/Triki00.jpg" width="400">
 
 Lekka aplikacja dla systemu Windows działająca w zasobniku systemowym, która zamienia kontroler **Triki BLE** (stworzony przez **Żabkę** i **HopX**) w konfigurowalny pilot do komputera.
 
@@ -102,6 +105,7 @@ Aplikacja łączy się z urządzeniem Triki przez Bluetooth Low Energy (BLE), in
 * NAudio
 
 ## O Triki
+<img src="img/Triki01.jpg" width="400">
 
 Triki to kontroler Bluetooth LE opracowany przez Żabkę i HopX. Pierwotnie został zaprojektowany do współpracy z aplikacjami mobilnymi, a ten projekt rozszerza jego możliwości, pozwalając wykorzystać go jako praktyczny kontroler do komputera z systemem Windows.
 
