@@ -9,5 +9,9 @@ public enum ActionType
     PlayPause,
     NextTrack,
     PreviousTrack,
+    UpArrow,
+    DownArrow,
+    LeftArrow,
+    RightArrow,
     LaunchApp
 }

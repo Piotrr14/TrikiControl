@@ -77,7 +77,7 @@ public sealed class GestureDetector
             Math.Abs(sample.GyroY) +
             Math.Abs(sample.GyroZ);
 
-        if (gyroMagnitude > 650)
+        if (gyroMagnitude > 100)
         {
             return new GestureEvent(
                 GestureType.Shake,

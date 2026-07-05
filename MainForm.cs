@@ -28,6 +28,7 @@ namespace TrikiControl
             cmbRotateCounterClockwise.DataSource = Enum.GetValues<ActionType>();
             cmbShake.DataSource = Enum.GetValues<ActionType>();
             cmbFaceDown.DataSource = Enum.GetValues<ActionType>();
+          cmbClick.DataSource = Enum.GetValues<ActionType>();
 
             _triki.LogMessage += (_, msg) =>
             {
@@ -122,6 +123,7 @@ namespace TrikiControl
             SetupActionCombo(cmbRotateCounterClockwise, GestureType.RotateCounterClockwise);
             SetupActionCombo(cmbShake, GestureType.Shake);
             SetupActionCombo(cmbFaceDown, GestureType.FaceDown);
+          SetupActionCombo(cmbClick, GestureType.Click);
         }
 
         private void SetupActionCombo(ComboBox combo, GestureType gesture)
@@ -147,6 +149,9 @@ namespace TrikiControl
 
             _settings.Current.Mappings[GestureType.FaceDown] =
                 (ActionType)cmbFaceDown.SelectedItem!;
+
+          _settings.Current.Mappings[GestureType.Click] =
+                (ActionType)cmbClick.SelectedItem!;
 
             _settings.Save();
 

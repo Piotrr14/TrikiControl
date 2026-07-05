@@ -8,5 +8,6 @@ public enum GestureType
     FastRotateCounterClockwise,
     Shake,
     FaceUp,
-    FaceDown
+    FaceDown,
+    Click
 }

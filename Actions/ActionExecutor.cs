@@ -17,6 +17,11 @@ public sealed class ActionExecutor
     private const byte VK_MEDIA_PREV_TRACK = 0xB1;
     private const byte VK_MEDIA_PLAY_PAUSE = 0xB3;
 
+  private const byte VK_UP = 0x26;
+  private const byte VK_DOWN = 0x28;
+  private const byte VK_LEFT = 0x25;
+  private const byte VK_RIGHT = 0x27;
+
 
     public void Execute(ActionMapping mapping, double value = 0)
     {
@@ -30,7 +35,8 @@ public sealed class ActionExecutor
                 PressKey(VK_VOLUME_DOWN, 3);
                 break;
 
-            case ActionType.None:
+            case ActionType.Mute:
+                PressKey(VK_VOLUME_MUTE);
                 break;
 
             case ActionType.PlayPause:
@@ -44,6 +50,23 @@ public sealed class ActionExecutor
             case ActionType.PreviousTrack:
                 PressKey(VK_MEDIA_PREV_TRACK);
                 break;
+
+          case ActionType.UpArrow:
+                PressKey(VK_UP);
+                break;
+
+          case ActionType.DownArrow:
+                PressKey(VK_DOWN);
+                break;
+
+          case ActionType.LeftArrow:
+                PressKey(VK_LEFT);
+                break;
+
+          case ActionType.RightArrow:
+                PressKey(VK_RIGHT);
+                break;
+
 
             case ActionType.LaunchApp:
                 if (!string.IsNullOrWhiteSpace(mapping.Value))

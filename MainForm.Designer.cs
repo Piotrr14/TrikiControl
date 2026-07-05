@@ -40,10 +40,12 @@ namespace TrikiControl
             cmbRotateCounterClockwise = new ComboBox();
             cmbShake = new ComboBox();
             cmbFaceDown = new ComboBox();
+            cmbClick = new ComboBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // btnConnect
@@ -67,7 +69,7 @@ namespace TrikiControl
             // lblStatus
             // 
             lblStatus.AutoSize = true;
-            lblStatus.Location = new Point(212, 287);
+            lblStatus.Location = new Point(12, 12);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(146, 20);
             lblStatus.TabIndex = 2;
@@ -76,7 +78,7 @@ namespace TrikiControl
             // lblBattery
             // 
             lblBattery.AutoSize = true;
-            lblBattery.Location = new Point(665, 287);
+            lblBattery.Location = new Point(380, 12);
             lblBattery.Name = "lblBattery";
             lblBattery.Size = new Size(75, 20);
             lblBattery.TabIndex = 3;
@@ -86,14 +88,14 @@ namespace TrikiControl
             // 
             txtLog.Location = new Point(12, 318);
             txtLog.Name = "txtLog";
-            txtLog.Size = new Size(776, 120);
+            txtLog.Size = new Size(474, 120);
             txtLog.TabIndex = 5;
             txtLog.Text = "";
             // 
             // chkAutoConnect
             // 
             chkAutoConnect.AutoSize = true;
-            chkAutoConnect.Location = new Point(5, 12);
+            chkAutoConnect.Location = new Point(212, 287);
             chkAutoConnect.Name = "chkAutoConnect";
             chkAutoConnect.Size = new Size(119, 24);
             chkAutoConnect.TabIndex = 6;
@@ -103,14 +105,14 @@ namespace TrikiControl
             // cmbRotateClockwise
             // 
             cmbRotateClockwise.FormattingEnabled = true;
-            cmbRotateClockwise.Location = new Point(5, 42);
+            cmbRotateClockwise.Location = new Point(15, 42);
             cmbRotateClockwise.Name = "cmbRotateClockwise";
             cmbRotateClockwise.Size = new Size(151, 28);
             cmbRotateClockwise.TabIndex = 7;
             // 
             // btnSaveSettings
             // 
-            btnSaveSettings.Location = new Point(5, 189);
+            btnSaveSettings.Location = new Point(15, 210);
             btnSaveSettings.Name = "btnSaveSettings";
             btnSaveSettings.Size = new Size(94, 29);
             btnSaveSettings.TabIndex = 8;
@@ -120,7 +122,7 @@ namespace TrikiControl
             // cmbRotateCounterClockwise
             // 
             cmbRotateCounterClockwise.FormattingEnabled = true;
-            cmbRotateCounterClockwise.Location = new Point(5, 76);
+            cmbRotateCounterClockwise.Location = new Point(15, 76);
             cmbRotateCounterClockwise.Name = "cmbRotateCounterClockwise";
             cmbRotateCounterClockwise.Size = new Size(151, 28);
             cmbRotateCounterClockwise.TabIndex = 9;
@@ -128,7 +130,7 @@ namespace TrikiControl
             // cmbShake
             // 
             cmbShake.FormattingEnabled = true;
-            cmbShake.Location = new Point(5, 144);
+            cmbShake.Location = new Point(15, 144);
             cmbShake.Name = "cmbShake";
             cmbShake.Size = new Size(151, 28);
             cmbShake.TabIndex = 10;
@@ -136,59 +138,78 @@ namespace TrikiControl
             // cmbFaceDown
             // 
             cmbFaceDown.FormattingEnabled = true;
-            cmbFaceDown.Location = new Point(5, 110);
+            cmbFaceDown.Location = new Point(15, 110);
             cmbFaceDown.Name = "cmbFaceDown";
             cmbFaceDown.Size = new Size(151, 28);
             cmbFaceDown.TabIndex = 11;
+            //
+            // cmbClick
+            //
+            cmbClick.FormattingEnabled = true;
+            cmbClick.Location = new Point(15, 178);
+            cmbClick.Name = "cmbClick";
+            cmbClick.Size = new Size(151, 28);
+            cmbClick.TabIndex = 17;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(162, 50);
+            label1.Location = new Point(172, 45);
             label1.Name = "label1";
             label1.Size = new Size(122, 20);
             label1.TabIndex = 12;
-            label1.Text = "Rotate Clockwise";
+            label1.Text = "Rotate Right";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(162, 84);
+            label2.Location = new Point(172, 79);
             label2.Name = "label2";
             label2.Size = new Size(178, 20);
             label2.TabIndex = 13;
-            label2.Text = "Rotate Counter Clockwise";
+            label2.Text = "Rotate Left";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(162, 118);
+            label3.Location = new Point(172, 113);
             label3.Name = "label3";
             label3.Size = new Size(79, 20);
             label3.TabIndex = 14;
-            label3.Text = "Face down";
+            label3.Text = "Flip Down";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(162, 152);
+            label4.Location = new Point(172, 147);
             label4.Name = "label4";
             label4.Size = new Size(48, 20);
             label4.TabIndex = 15;
             label4.Text = "Shake";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(172, 179);
+            label5.Name = "label5";
+            label5.Size = new Size(48, 20);
+            label5.TabIndex = 16;
+            label5.Text = "Click";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightGreen;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.LightGray;
+            ClientSize = new Size(500, 450);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(cmbFaceDown);
             Controls.Add(cmbShake);
+            Controls.Add(cmbClick);
             Controls.Add(cmbRotateCounterClockwise);
             Controls.Add(btnSaveSettings);
             Controls.Add(cmbRotateClockwise);
@@ -232,9 +253,11 @@ namespace TrikiControl
         private ComboBox cmbRotateCounterClockwise;
         private ComboBox cmbShake;
         private ComboBox cmbFaceDown;
+        private ComboBox cmbClick;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
+        private Label label5;
     }
 }
