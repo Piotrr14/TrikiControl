@@ -19,10 +19,11 @@ The application connects to a Triki device via Bluetooth Low Energy (BLE), inter
 
 ## Supported Gestures
 
-* Clockwise rotation
-* Counter-clockwise rotation
+* Right rotation
+* Left rotation
 * Shake
 * Face down
+* Click (currently unavailable)
 
 ## Supported Actions
 
@@ -31,6 +32,10 @@ The application connects to a Triki device via Bluetooth Low Energy (BLE), inter
 * Play / Pause
 * Next / Previous Track
 * Launch Application
+* Up Arrow
+* Down Arrow
+* Left Arrow
+* Right Arror
 
 ## Technology
 
@@ -75,6 +80,7 @@ Aplikacja łączy się z urządzeniem Triki przez Bluetooth Low Energy (BLE), in
 * Obrót przeciwnie do ruchu wskazówek zegara
 * Potrząśnięcie
 * Odwrócenie urządzenia ekranem do dołu
+* Kliknięcie (obecnie niedostepne)
 
 ## Obsługiwane akcje
 
@@ -83,6 +89,10 @@ Aplikacja łączy się z urządzeniem Triki przez Bluetooth Low Energy (BLE), in
 * Odtwarzanie / Pauza
 * Następny / Poprzedni utwór
 * Uruchomienie aplikacji
+* Strzałka w góre
+* Strzałka w dół
+* Strzałka w lewo
+* Strzałka w prawo
 
 ## Technologie
 
