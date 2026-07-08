@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
@@ -12,14 +12,18 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Content Include="kapsel.ico" />
+		<Content Include="kapsel.ico" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="C:\Users\egort\Downloads\kapsel.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="kapsel.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NAudio" Version="2.3.0" />
 	</ItemGroup>
 
 </Project>
